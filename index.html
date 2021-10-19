@@ -3,20 +3,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid System part 2</title>
+    <title>Book store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <style>
         section {
             padding: 60px 0;
         }
+        
+        #intro {
+        background-image: url("images/pinkbook.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     </style>
 </head>
 <body>
 
-     <!-- navbar -->   
+     <!-- navbar    -->
     <nav class="navbar fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#"><i class="bi bi-book"></i>  Book Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,7 +34,7 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">New arrivals</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
@@ -37,16 +45,37 @@
         
       <!-- home page -->
 
-      <section class="text-dark bg-secondary  vh-100 ">
-        <div class="mt-n1" style="width: 200px;">
-        <h1 class="text-center" >Cover your page.</h1>
-        <p class="lead text-center">Cover is a one-page template for building simple and 
-            beautiful home pages. Download, edit the text, and add your own 
-            fullscreen background photo to make it your own.</p>
-            <p class="lead text-center">
-                <a href="#" class="btn btn-lg btn-secondary fw-bold border-dark bg-dark">Learn more</a>
+      <section id="intro"
+   >
+        <!-- <div class="px-3 text-center" style="width: 700px;"> -->
+    
+        <h1 class=" text-center" 
+        style="
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 25%; ">
+    Keep reading
+</h1>
+        <p class="lead text-center" 
+        style="
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 25%;
+        width: 600px;">
+           Buy books at a cheapest price. You can buy books without exploitations 
+           from roadside sellers. No more pirated copy.
+        </p>
+            <p class=" text-center" style="
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            top: 25%;
+        ">
+                <a href="#" class="btn btn-lg btn-secondary fw-bold border-dark bg-dark">View more</a>
               </p>
-</div>
+<!-- </div> -->
       </section>
 
     <!-- main image & intro text -->
@@ -68,43 +97,31 @@
         </div>
     </section>
 
-    <!-- main image & intro text -->
-    <!-- <section id="about">
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="display-2">Black-Belt</div>
-                        <div class="display-5 text-muted">Your coding skills</div>
-                    </h1>
-                    <p class="lead my-4 text-muted">This book is NOT about buying new shoes. But it does an even better job at helping women look and feel great about themselves. What makes a really successful women is not what she wears but what she is made of inside. </p>
-                    <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
-                </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="assets/ebook-cover.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section> -->
+    <section id="intro">
 
-    <!-- main image & intro text -->
-    <!-- <section id="service">
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="display-2">Black-Belt</div>
-                        <div class="display-5 text-muted">Your coding skills</div>
-                    </h1>
-                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae numquam adipisci odio nostrum, sequi, dolorem non facere vel inventore ipsa modi quaerat ab nesciunt quo iure provident temporibus reprehenderit eos!</p>
-                    <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card ">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="assets/ebook-cover.png" alt="">
-                </div>
+              </div>
             </div>
-        </div>
-    </section> -->
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+   
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
